@@ -66,6 +66,10 @@ Remember, you need routes which correspond to:
 Submit a working application which uses the Javascript application, where
 appropriate to run the game
 
+## Optimize Your Learning
+
+_No comment_
+
 ## Resources
 
 * [Constraining by uniqueness][uniqueness constraint]
