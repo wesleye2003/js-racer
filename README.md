@@ -2,10 +2,11 @@
 
 ## Learning Competencies
 
-* manage the flow of data through an MVC application
-* use back-end state and transitions to gather data required for a Javascript
-  application
+* Map the flow of data through a web application
+* Implement CRUD in an MVC application
 * Implement a functional Javascript application
+* Change the DOM based on events
+* Use AJAX actions to change views based on async data
 
 ## Summary
 
