@@ -29,9 +29,8 @@ The flow goes like this:
    can view the results of that particular game
 
 ## Releases
-### Release 0
 
-### Models
+### Release 0: Models
 
 You should have two core models: `Player` and `Game`.  A player can be in many
 games and a game can have multiple players.  For now it's "just two," which can
