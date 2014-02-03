@@ -1,18 +1,17 @@
-# Javascript Racer 2 Back End
+# JavaScript Racer 2 Back End
 
 ## Learning Competencies
 
 * Map the flow of data through a web application
 * Implement CRUD in an MVC application
-* Implement a functional Javascript application
+* Build a pure JavaScript application
 * Change the DOM based on events
-* Use AJAX actions to change views based on async data
+* Use AJAX actions to change views based on asynchronous data 
 
 ## Summary
 
 We'll now add a back-end to our JavaScript racer game using a simple Sinatra
-app.  The game still runs in a single browser instance, i.e., two players don't
-play each other across different browsers, but rather on a single browser.
+application.  The game still runs in a single browser instance, i.e., two players don't play each other across different browsers, but rather on a single browser.
 
 The flow goes like this:
 
@@ -21,8 +20,7 @@ The flow goes like this:
 3. The players fill out the form and this creates a new game
 4. The new game starts, and each player smashes their respective key until one
    of them wins
-5. After one of them wins, the winning player and amount of time it took to win
-   is sent to the server and the game is recorded as being "done"
+5. After one of them wins, the winning player and amount of time it took to win is sent to the server and the game is recorded as being "done"
 6. The players can choose to start another game using their same initials, or
    restart using different initials
 7. After a game is finished the players are given a unique URL at which they
@@ -63,12 +61,11 @@ Remember, you need routes which correspond to:
 
 ### Release 2: Views and Flow
 
-Submit a working application which uses the Javascript application, where
+Submit a working application which uses the JavaScript application, where
 appropriate to run the game
 
-## Optimize Your Learning
+<!-- ## Optimize Your Learning -->
 
-_No comment_
 
 ## Resources
 
