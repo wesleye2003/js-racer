@@ -1,0 +1,34 @@
+.racer-table{
+	position: relative;
+	top: 10em;
+	width:90%;
+	left:5%;
+	height:5em;
+	background-color: black;
+}
+
+.divider{
+	position: relative;
+	top: 10em;
+	width: 90%;
+	left: 5%;
+	background-color: black;
+	border-top: 2px dashed yellow;
+}
+
+img{
+	position: relative;
+	top:1.5em;
+	left: 5%;
+}
+
+.hidden{
+	display: none;
+}
+
+.game-start, .game-players {
+	position: relative;
+	top:5em;
+	text-align: center;
+
+}

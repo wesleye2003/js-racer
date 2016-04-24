@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JAVASCRIPT RACER</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+  </head>
+  <body>
+
+    <form class="game-start" action="/game/new" method="get">
+      <input type="submit" value="New Game">
+    </form>
+
+    <form class="hidden game-players" action="/game/new" method="post">
+        Player 1: <input type="text" name="player_1"><br>
+        Player 2: <input type="text" name="player_2"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+      <div class="racer-table">
+        <img id="p1" src="img/car.png">
+      </div>
+      <div class="divider"></div>
+      <div class="racer-table">
+        <img id="p2" src="img/car2.gif">
+      </div>
+
+        
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/control.js" defer></script>  
+  </body>
+</html>
+
