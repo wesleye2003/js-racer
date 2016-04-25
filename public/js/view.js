@@ -1,12 +1,12 @@
+var updatePlayerTrack = function(player){
+	var newPosition= (player.position*10 + 5).toString()+"%";
+	$('#'+player.abbr).css('left', newPosition);
+};
 
-	var update_player_position = function(player_object, spaces){
-		if(player_object.abbr == 'p1'){
-			player_object.move(spaces);
-		}else if(player_object.abbr == 'p2'){
-			player_object.move(spaces);
-		};
-	};
+var resetPlayerTracks = function(game) {
+	updatePlayerTrack(game.player1);
+	updatePlayerTrack(game.player2);
+}
 
-	var reset_player_position = function(player_object){
-		player_object.reset();
-	};
+
+		
