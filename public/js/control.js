@@ -19,9 +19,12 @@ $(document).ready(function(){
 		$request.done(function(response_data){
 			player1 = new Player(response_data["player_1"], "p1");
 			player2 = new Player(response_data["player_2"], "p2");
-			$('.game-start').toggleClass('hidden');
 			$('.game-players').toggleClass('hidden');
-		})
+		});
+		$request.fail(function(error_data){
+			$('.errors').remove();
+			$('.game-players').prepend(error_data.responseText);
+		});
 	});
 		
 	$(this).keypress(function(e) {
