@@ -1,6 +1,6 @@
 var updatePlayerTrack = function(player){
 	var newPosition= (player.position*10 + 5).toString()+"%";
-	$('#'+player.abbr).css('left', newPosition);
+	$('#'+player.abbr).animate({left: newPosition},100);
 };
 
 var resetPlayerTracks = function(game) {
@@ -9,4 +9,4 @@ var resetPlayerTracks = function(game) {
 }
 
 
-		
+

@@ -1,12 +1,8 @@
 $(document).ready(function(){
 	$('.game-start').on('submit', function(e){
 		e.preventDefault();
-		var link = $(this).attr('action');
-		var $request = $.get(link);
-		$request.done(function(){
-			$('.game-start').toggleClass('hidden');
-			$('.game-players').toggleClass('hidden');
-		});
+		$('.game-start').toggleClass('hidden');
+		$('.game-players').toggleClass('hidden');
 	});
 
 	var game;
@@ -22,7 +18,6 @@ $(document).ready(function(){
 			game = new Game(player1, player2);
 			$('.game-players').toggleClass('hidden');
 			game.bindPlayers();
-			game.play();
 		});
 		$request.fail(function(error_data){
 			$('.errors').remove();
@@ -30,9 +25,9 @@ $(document).ready(function(){
 		});
 	});
 });
-		
-	
 
-	
+
+
+
 
 

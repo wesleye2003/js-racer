@@ -2,11 +2,6 @@ get "/" do
 	erb :index
 end
 
-get "/games/new" do
-	if request.xhr?
-		status 200
-	end
-end
 
 post "/games" do
 	if request.xhr?
