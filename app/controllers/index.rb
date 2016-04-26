@@ -5,8 +5,8 @@ end
 
 post "/games" do
 	if request.xhr?
-		p1 = Player.new(name: params['player_1'])
-		p2 = Player.new(name: params['player_2'])
+		p1 = Player.find_or_initialize_by(name: params['player_1'])
+		p2 = Player.find_or_initialize_by(name: params['player_2'])
 		if (p1.save && p2.save)
 			new_game = Game.new
 			route = rand(1000..100000)
